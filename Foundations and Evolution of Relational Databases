@@ -1,0 +1,65 @@
+Chapter 1: Who Needs a Database?
+Database Models & Evolution:
+Flat File Databases: Store structured data using delimited files (e.g., CSVs) or fixed-length fields
+. They lack built-in protections for data integrity and frequently suffer from data redundancy
+.
+Hierarchical Databases: Organise data in a tree-like structure where each child table can have only one parent table
+.
+Relational Databases: Introduced by Edgar F. Codd in 1970
+. Data is organised into tables connected by Primary Keys and Foreign Keys, which minimises redundancy while maximizing data integrity and flexibility
+.
+Common RDBMS Systems: Includes commercial and open-source systems such as Oracle, Microsoft SQL Server, IBM DB2, MySQL, PostgreSQL, and Microsoft Access
+.
+Project Planning & Scope:
+Statement of Work (SOW): A foundational project document containing four key elements: History, Scope, Objectives, and Tasks/Deliverables
+.
+Database Documentation:
+Data Dictionary: Defines table structures, column names, data types, key fields, and constraints
+.
+Process Documentation: Records original business rules, requirements, and design decisions
+.
+Chapter 2: Gathering Information
+Information Gathering Techniques:
+Interviews: Conducted with key stakeholders using open-ended questions to understand workflow and expectations
+.
+Reviewing Business Documents: Examining existing forms (used for data input) and reports (summarised data output)
+.
+Questionnaires: Efficient for reaching larger groups using closed-ended questions (e.g., multiple-choice or ranking)
+.
+Work Shadowing: Observing actual operations to discover undocumented procedures and workflow exceptions
+.
+Database Types by Business Need:
+Transaction Databases: Optimised for recording real-time operations (e.g. sales, orders) quickly and efficiently
+.
+Management Information Systems (MIS): Optimised for querying transaction data to generate summary reports for management decision-making
+.
+Business Intelligence (BI) & Data Mining: Tools that analyze patterns across large data warehouses
+.
+Cloud Databases & Data Services: Database systems hosted on remote internet infrastructure and accessed via data service APIs
+.
+Chapter 3: Requirements and Business Rules
+Architecture:
+Client/Server Model: The client application requests data or services, and the database/web server processes and returns the requested data
+.
+Categorising Requirements:
+Data Requirements: The specific attributes required to store necessary business data
+.
+Report Requirements: The data structure needed to produce required summary reports
+.
+Access & Security Requirements: Defining user permissions using database commands such as Create, Alter, Drop, Select, Update, Insert, Delete, and Execute
+.
+Business Rules & Constraints:
+Rules defining how data is gathered, stored, and processed
+.
+Can be enforced directly within the database schema, using automated triggers, or within the client software application
+.
+Data Modeling & Key Selection:
+Entities & Attributes: Identified through noun analysis from interview notes and business forms
+.
+Candidate Keys: Attributes suitable for uniquely identifying records
+.
+Natural Key: Unique field derived naturally from real-world data
+.
+Composite Key: Combination of two or more attributes working together as a unique key
+.
+Surrogate Key: An artificially generated unique identifier (e.g., an auto-incremented ID number
